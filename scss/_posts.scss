@@ -101,7 +101,8 @@
   
   
   .post-footer{
-    margin-top: 24px;
+    width: 90%;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -132,6 +133,10 @@
 
     .post-socialmedia-bar{
 
+      a{
+        margin: 0 16px;
+        color: #464646;
+      }
     }
   }
 
