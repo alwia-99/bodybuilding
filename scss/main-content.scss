@@ -1,0 +1,12 @@
+.main-content{
+  margin: 0 5%;
+  //background-color: #cccccc;
+  height: 100vh;
+
+  @include mq(tablet){
+    width: calc(70% - 32px);
+    float: left;
+    margin-left: 5%;
+    margin-right: 16px;
+  }
+}

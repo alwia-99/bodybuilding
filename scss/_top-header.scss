@@ -1,0 +1,51 @@
+.menu{
+  background-color: $color-dark-gray;
+   //height: 345px;
+}
+
+.main-wrap{
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  .bars{
+    border-left: 1px solid $color-light-outline;
+    border-right: 1px solid $color-light-outline;
+
+    width: 50px;
+    text-align: center;
+
+    i{
+      font-size: 24px;
+      color: #ffffff;
+    }
+  }
+  
+  .logo{
+
+  }
+
+
+  .social-media-icons {
+    display: none;
+
+    @include mq(tablet){
+      display: flex;
+    }
+    .icon-box{
+      width: 50px;
+      border-left: 1px solid $color-light-outline;
+      border-right: 1px solid $color-light-outline;
+      text-align: center;
+      
+      i{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+  }
+
+
+}
