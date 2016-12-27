@@ -82,11 +82,15 @@
     }
 
     .post-read-more-btn {
+      padding-bottom: 50px;
+      border-bottom: 1px solid #f2f2f4;
 
       a{
+        font-weight: 800;
+        font-size: 14px;
         padding: 0 8px;
         text-decoration: none;
-        color: black;
+        color: #212121;
         text-transform: uppercase;
         border-left: 1px solid $color-posts-light-gray;
         border-right: 1px solid $color-posts-light-gray;
