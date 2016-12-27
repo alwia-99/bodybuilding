@@ -1,9 +1,21 @@
 .menu{
-  background-color: $color-dark-gray;
-   //height: 345px;
+  position: relative;
+
+  .header-bg-color{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 345px;
+    background-color: $color-dark-gray;
+
+  }
 }
 
 .main-wrap{
+  position: relative;
+  z-index: 9999;
   line-height: 50px;
   display: flex;
   justify-content: space-between;
