@@ -98,45 +98,61 @@
       }
     }
   }
-  
-  
-  
-  .post-footer{
-    width: 90%;
+
+  .post-footer {
     margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
 
-    .post-feedback{
+    @include mq(tablet) {
       display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      width: 95%;
+    }
 
-      
-      .post-comment{
+    @include mq(desktop){
+      width: 90%;
+    }
+
+    .post-feedback {
+      display: flex;
+      justify-content: center;
+      .post-comment {
         display: flex;
-        margin: 0 32px;
+        //margin: 0 32px;
 
-        p{
+        p {
           margin-left: 8px;
         }
       }
-      
-      .post-likes{
+
+      .post-likes {
         display: flex;
         margin: 0 32px;
 
-        p{
-          margin-left:  8px;
+        p {
+          margin-left: 8px;
         }
       }
     }
 
+    .post-socialmedia-bar {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-around;
 
-    .post-socialmedia-bar{
+      @include mq(tablet) {
+        margin-top: 0;
+        display: block;
+      }
 
-      a{
-        margin: 0 16px;
+      a {
+        font-size: 16px;
+        margin: 0 32px;
         color: #464646;
+
+        @include mq(tablet) {
+          margin: 0 16px;
+        }
       }
     }
   }

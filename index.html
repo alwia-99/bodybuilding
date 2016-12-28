@@ -133,7 +133,7 @@
                 <div class="post-feedback">
                     <div class="post-comment">
                         <i class="fa fa-comments"></i>
-                        <p>06 comment</p>
+                        <p>06 Comment</p>
                     </div>
 
                     <div class="post-likes">
@@ -160,23 +160,25 @@
             <cite>Apolo Ohno</cite>
         </blockquote>
 
+        <div class="post-vimeo">
+            <iframe src="https://player.vimeo.com/video/133535757" width="100%" height="100%" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-        <iframe src="https://player.vimeo.com/video/76979871" width="100%" height="460" frameborder="0"
-                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <script>
+                var iframe = document.querySelector('iframe');
+                var player = new Vimeo.Player(iframe);
 
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script>
-            var iframe = document.querySelector('iframe');
-            var player = new Vimeo.Player(iframe);
+                player.on('play', function () {
+                    console.log('played the video!');
+                });
 
-            player.on('play', function () {
-                console.log('played the video!');
-            });
+                player.getVideoTitle().then(function (title) {
+                    console.log('title:', title);
+                });
+            </script>
 
-            player.getVideoTitle().then(function (title) {
-                console.log('title:', title);
-            });
-        </script>
+        </div>
 
 
     </div>
