@@ -113,7 +113,14 @@
 
             <div class="post-main">
                 <div class="post-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos laboris nisis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore egiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id it laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore  ut labore et dolore now is the great working with travlling magnam aliquam quaerat voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos
+                        laboris nisis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore egiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id it laborum. Sed ut perspiciatis unde
+                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore ut labore et dolore now is the great working with travlling
+                        magnam aliquam quaerat voluptatem.</p>
                 </div>
 
                 <div class="post-read-more-btn">
@@ -126,12 +133,12 @@
                 <div class="post-feedback">
                     <div class="post-comment">
                         <i class="fa fa-comments"></i>
-                        <p>06  comment</p>
+                        <p>06 comment</p>
                     </div>
 
                     <div class="post-likes">
                         <i class="fa  fa-thumbs-o-up"></i>
-                        <p>Like  25</p>
+                        <p>Like 25</p>
                     </div>
                 </div>
 
@@ -146,13 +153,31 @@
         </div>
 
 
-
-
-
         <blockquote>
-            <p>It's about having an actives lifestyles, staying of’shealthy powers, and making the right decisions. Life is bes about balance. Not everybody wants to run a marathon, but we extra have a now days flight of stairs.</p>
+            <p>It's about having an actives lifestyles, staying of’shealthy powers, and making the right decisions. Life
+                is bes about balance. Not everybody wants to run a marathon, but we extra have a now days flight of
+                stairs.</p>
             <cite>Apolo Ohno</cite>
         </blockquote>
+
+
+        <iframe src="https://player.vimeo.com/video/76979871" width="100%" height="460" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            var iframe = document.querySelector('iframe');
+            var player = new Vimeo.Player(iframe);
+
+            player.on('play', function () {
+                console.log('played the video!');
+            });
+
+            player.getVideoTitle().then(function (title) {
+                console.log('title:', title);
+            });
+        </script>
+
 
     </div>
 
@@ -182,6 +207,15 @@
 
         <div class="ad">
             <img src="img/krawat-small.png" alt="">
+        </div>
+
+        <div class="latest-posts">
+            <ul>
+                <li>
+                    <img src="" alt="">
+
+                </li>
+            </ul>
         </div>
     </div>
 </main>
