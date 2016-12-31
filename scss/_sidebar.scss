@@ -100,7 +100,7 @@
         }
 
         a {
-          display: flex;
+          display: inline;
           text-transform: uppercase;
           font-weight: 400;
           color: #000;
@@ -108,7 +108,7 @@
         }
 
         .latest-post-meta {
-          display: flex;
+          display: inline;
           margin-top: 8px;
           p {
             display: inline-block;
