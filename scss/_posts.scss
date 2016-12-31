@@ -83,7 +83,6 @@
 
     .post-read-more-btn {
       padding-bottom: 50px;
-      border-bottom: 1px solid #f2f2f4;
 
       a {
         font-weight: 800;
@@ -100,6 +99,8 @@
   }
 
   .post-footer {
+    border-top: 1px solid #f2f2f4;
+    padding-top: 30px;
     margin: 20px auto;
 
     @include mq(tablet) {
