@@ -76,6 +76,7 @@
   }
 
   .latest-posts {
+    margin-bottom: 24px;
 
     h3 {
       text-align: center;
@@ -92,8 +93,10 @@
 
         img {
           height: 65px;
+          width: 60px;
           float: left;
-          padding-right: 16px;
+          margin-right: 16px;
+          //background-color: red;
         }
 
         a {
@@ -114,6 +117,22 @@
           }
         }
       }
+
+      li:nth-last-child(1){
+        border-bottom: 1px solid #f7f7f7;
+
+      }
+    }
+  }
+
+
+  .social-media-icons {
+
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      color: #464646;
     }
   }
 
