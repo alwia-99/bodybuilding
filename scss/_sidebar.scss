@@ -1,7 +1,7 @@
 .right-sidebar {
   display: none;
 
-  @include mq(tablet){
+  @include mq(tablet) {
     display: block;
     margin-right: 5%;
     margin-left: 16px;
@@ -34,42 +34,84 @@
 
   }
 
-  .ad{
+  .ad {
     margin-bottom: 25px;
-    img{
+    img {
       width: 100%;
     }
   }
 
-  .category-list{
+  .category-list {
     margin-bottom: 25px;
-    h3{
+    h3 {
       text-align: center;
       font-family: 'Lato', sans-serif;
       font-weight: bold;
       margin-bottom: 24px;
     }
 
-    ul{
+    ul {
       font-weight: bold;
 
-      li{
+      li {
         list-style: none;
         padding: 12px 0;
         border-top: 1px solid #f7f7f7;
 
-        a{
+        a {
           font-family: 'Hind', sans-serif;
           font-size: 14px;
           text-decoration: none;
           color: black;
           text-transform: uppercase;
         }
-        
-        span{
+
+        span {
           font-family: 'Hind', sans-serif;
           float: right;
           font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .latest-posts {
+
+    h3 {
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 24px;
+
+      li {
+
+        border-top: 1px solid #f7f7f7;
+        padding: 16px 0;
+        list-style: none;
+
+        img {
+          height: 65px;
+          float: left;
+          padding-right: 16px;
+        }
+
+        a {
+          display: flex;
+          text-transform: uppercase;
+          font-weight: 400;
+          color: #000;
+          text-decoration: none;
+        }
+
+        .latest-post-meta {
+          display: flex;
+          margin-top: 8px;
+          p {
+            display: inline-block;
+            font-size: 12px;
+            margin-right: 8px;
+          }
         }
       }
     }
