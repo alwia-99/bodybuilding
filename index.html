@@ -75,7 +75,7 @@
 
     <div class="main-content">
 
-        <div class="image-post">
+        <div class="post">
             <div class="main-image">
                 <img src="img/poster.jpg" alt="">
 
@@ -160,32 +160,97 @@
             <cite>Apolo Ohno</cite>
         </blockquote>
 
-        <div class="post-vimeo">
-            <iframe src="https://player.vimeo.com/video/133535757" width="100%" height="100%" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-            <script src="https://player.vimeo.com/api/player.js"></script>
-            <script>
-                var iframe = document.querySelector('iframe');
-                var player = new Vimeo.Player(iframe);
+        <div class="post">
+            <div class="post-vimeo">
+                <iframe src="https://player.vimeo.com/video/133535757" width="100%" height="100%" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-                player.on('play', function () {
-                    console.log('played the video!');
-                });
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <script>
+                    var iframe = document.querySelector('iframe');
+                    var player = new Vimeo.Player(iframe);
 
-                player.getVideoTitle().then(function (title) {
-                    console.log('title:', title);
-                });
-            </script>
+                    player.on('play', function () {
+                        console.log('played the video!');
+                    });
+
+                    player.getVideoTitle().then(function (title) {
+                        console.log('title:', title);
+                    });
+                </script>
+            </div>
+
+            <div class="postcard-block">
+                <img src="img/postcard.png" alt="">
+            </div>
+
+
+            <div class="post-header">
+                <div class="post-category">
+                    <h3>travelling</h3>
+                </div>
+
+                <div class="post-title">
+                    <h2>be the one to stand out in the crowed</h2>
+                </div>
+
+                <div class="post-meta">
+                    <div class="post-author">
+                        <i class="fa fa-child"></i>
+                        <p>Pawel Kuna</p>
+                    </div>
+
+                    <div class="post-date">
+                        <i class="fa fa-calendar"></i>
+                        <p>14-01-2016</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-main">
+                <div class="post-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos
+                        laboris nisis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore egiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id it laborum. Sed ut perspiciatis unde
+                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore ut labore et dolore now is the great working with travlling
+                        magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+
+            <div class="post-footer">
+
+                <div class="post-feedback">
+                    <div class="post-comment">
+                        <i class="fa fa-comments"></i>
+                        <p>06 Comment</p>
+                    </div>
+
+                    <div class="post-likes">
+                        <i class="fa  fa-thumbs-o-up"></i>
+                        <p>Like 25</p>
+                    </div>
+                </div>
+
+                <div class="post-socialmedia-bar">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
 
         </div>
-
-
     </div>
 
 
-    <div class="right-sidebar">
 
+
+
+    <div class="right-sidebar">
         <div class="search">
             <input type="text" placeholder="SEARCH">
             <button><i class="fa fa-search"></i></button>
