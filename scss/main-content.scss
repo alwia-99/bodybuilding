@@ -1,13 +1,17 @@
 .main-content{
-  margin: 0 5%;
+  margin: 0 16px;
   //background-color: #cccccc;
   height: 100vh;
 
   @include mq(tablet){
     width: calc(70% - 32px);
     float: left;
-    margin-left: 5%;
+    //margin-left: 5%;
     margin-right: 16px;
+  }
+  
+  @include mq(desktop){
+    //margin: 0;
   }
 }
 
