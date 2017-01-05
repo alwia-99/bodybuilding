@@ -23,7 +23,7 @@ blockquote::before {
   content: ' ';
   position: absolute;
   top: -20px;
-  left: 50%;
+  left: calc(50% - 17px);
   background-image: url(/img/blockquote.png);
   background-repeat: no-repeat;
   height: 35px;
