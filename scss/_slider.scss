@@ -8,6 +8,7 @@
   background-size: cover;
   margin: 0 5%;
   position: relative;
+  z-index: 222;
 
   @include mq(tablet){
     height: 580px;

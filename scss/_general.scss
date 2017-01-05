@@ -7,9 +7,28 @@
 body{
   background-color: $color-bg;
   font-family: 'Lato', sans-serif;
+  line-height: 1.57;
+  -webkit-font-smoothing: antialiased;
+}
+
+main{
+  max-width: 1530px;
+  margin: auto;
 }
 
 .main-wrap{
   margin: 0 5%;
+
+}
+
+.header-bg-color {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 345px;
+  background-color: $color-dark-gray;
 
 }
