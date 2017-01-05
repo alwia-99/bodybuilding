@@ -29,8 +29,13 @@ header {
     }
 
     .logo{
-      position: absolute;
-      left: calc(50% - 75px);
+      margin-right: 24px;
+
+      @include mq(tablet){
+        margin: 0;
+        position: absolute;
+        left: calc(50% - 75px);
+      }
     }
 
 
