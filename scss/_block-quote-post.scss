@@ -1,4 +1,4 @@
-blockquote {
+.blockquote {
   position: relative;
   margin-bottom: 60px;
   text-align: center;
@@ -17,9 +17,22 @@ blockquote {
     color: #999999;
     padding-bottom: 80px;
   }
+
+  h4{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
 }
 
-blockquote::before {
+.blockquote::before {
   content: ' ';
   position: absolute;
   top: -20px;
