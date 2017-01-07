@@ -1,0 +1,22 @@
+.post-text {
+  background-color: white;
+  padding-top: 20px;
+  position: relative;
+
+  .post-content {
+    p {
+      margin-top: 24px;
+    }
+  }
+
+  .postcard-block {
+    top: -10px;
+    position: absolute;
+    right: calc(50% - 14px);
+    background: black;
+    padding: 4px;
+    display: flex;
+  }
+
+}
+
