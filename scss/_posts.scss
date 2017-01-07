@@ -1,5 +1,6 @@
 .post {
   margin-bottom: 60px;
+  position: relative;
 
   .main-image {
     position: relative;
@@ -18,6 +19,7 @@
     }
 
     .postcard-block {
+      border-radius: 3px;
       position: absolute;
       bottom: -10px;
       right: calc(50% - 14px);
@@ -31,6 +33,11 @@
     text-transform: uppercase;
     margin-top: 40px;
     text-align: center;
+    padding: 0 16px;
+
+    @include mq(tablet){
+      padding: 32px;
+    }
 
     .post-category {
       font-size: 12px;
@@ -78,7 +85,12 @@
 
     .post-content {
       margin: 40px auto;
-      width: 90%;
+      padding: 0 16px;
+
+      @include mq(tablet){
+        padding: 0 32px;
+      }
+
     }
 
     .post-read-more-btn {
@@ -163,3 +175,5 @@
   }
 
 }
+
+
