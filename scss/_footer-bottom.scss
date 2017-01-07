@@ -1,5 +1,10 @@
 footer{
-  height: 500px;
-  background-color: #212429;
-  clear: both;
+
+  .wrap{
+    margin: auto;
+    height: 200px;
+    clear: both;
+    max-width: 1530px;
+    background-color: #cccccc;
+  }
 }
