@@ -42,13 +42,17 @@ footer {
 
       }
 
-      span{
-        margin-bottom: 10px;
+      .last-tweet{
+        position: relative;
+        margin-left: 20px;
       }
 
-      span::before{
+      .last-tweet::before{
         content: '\f099';
         font-family: FontAwesome;
+        position: absolute;
+        top:0;
+        left: -20px;
 
       }
 
