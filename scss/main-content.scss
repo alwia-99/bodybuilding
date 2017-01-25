@@ -1,9 +1,8 @@
 .main-content{
   margin: 0 8px;
   //background-color: #cccccc;
-  height: 100vh;
 
-  @include mq(tablet){
+  @include mq(desktop){
     width: calc(70% - 32px);
     float: left;
     //margin-left: 5%;

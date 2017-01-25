@@ -11,25 +11,25 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
-main{
+
+.main{
+  //content: " ";
+  //display: block;
+  //height: 0;
+  //clear: both;
   max-width: 1530px;
-  margin: auto;
-  clear: both;
-}
-
-.main-wrap{
-  //margin: 0 5%;
-
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-bg-color {
   z-index: 1;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 50%;
   left: 0;
   right: 0;
-  height: 345px;
+  //height: 345px;
   background-color: $color-dark-gray;
 
 }
